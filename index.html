@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rondônia - Descubra o Estado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #006400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #e0e0e0;
+      padding: 10px;
+    }
+    nav button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background: #006400;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    nav button:hover {
+      background: #228B22;
+    }
+    section {
+      padding: 20px;
+      display: none;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌿 Descubra Rondônia</h1>
+  <p>Explore a história, cultura e belezas naturais do estado</p>
+</header>
+
+<nav>
+  <button onclick="showSection('historia')">História</button>
+  <button onclick="showSection('turismo')">Turismo</button>
+  <button onclick="showSection('populacao')">População</button>
+  <button onclick="showSection('cultura')">Cultura</button>
+  <button onclick="showSection('mapa')">Mapa</button>
+  <button onclick="showSection('cidades')">Cidades</button>
+  <button onclick="showSection('fotos')">Fotos</button>
+  <button onclick="showSection('rios')">Rios</button>
+  <button onclick="showSection('infra')">Energia e Água</button>
+</nav>
+
+<section id="historia">
+  <h2>📜 História de Rondônia</h2>
+  <p>Rondônia foi habitada por diversos povos indígenas antes da chegada dos europeus. A região ganhou importância com a construção da Estrada de Ferro Madeira-Mamoré e a exploração da borracha. Tornou-se estado em 1981, em homenagem ao Marechal Cândido Rondon.</p>
+   <img src="historia-rondonia.jpeg">
+</section>
+
+<section id="turismo">
+  <h2>🏞️ Turismo</h2>
+  <ul>
+    <li>Parque Nacional de Pacaás Novos</li>
+    <li>Real Forte Príncipe da Beira</li>
+    <li>Vale das Cachoeiras</li>
+    <li>Rio Madeira e Guaporé</li>
+    <li>Estrada de Ferro Madeira-Mamoré</li>
+  </ul>
+  <img src="turismo.jpg">
+</section>
+
+<section id="populacao">
+  <h2>👥 População</h2>
+  <p>Rondônia possui cerca de 1.746.227 habitantes (2024), distribuídos em 52 municípios. A capital, Porto Velho, é a cidade mais populosa com mais de 500 mil habitantes.</p>
+</section>
+
+<section id="cultura">
+  <h2>🎭 Cultura</h2>
+  <p>A cultura rondoniense é uma mistura de tradições indígenas, nordestinas, sulistas e estrangeiras. A culinária é diversa, com pratos como tacacá, peixe com açaí e polenta. O artesanato é rico em sementes amazônicas e biojoias.</p>
+</section>
+
+<section id="mapa">
+  <h2>🗺️ Mapa de Rondônia</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Rondonia_in_Brazil.svg/1200px-Rondonia_in_Brazil.svg.png" alt="Mapa de Rondônia">
+</section>
+
+<section id="cidades">
+  <h2>🏙️ Cidades</h2>
+  <p>Rondônia é composto por 52 municípios. As maiores cidades são Porto Velho, Ji-Paraná, Ariquemes, Vilhena e Cacoal.</p>
+</section>
+
+<section id="fotos">
+  <h2>📸 Fotos do Estado</h2>
+  <img src="https://s2-g1.glbimg.com/3LBuW7RcJZArQ1jCnn7mK_7ccx8=/0x0:1600x1200/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/f/f/6NkGBYS72DXik3xQBBig/porto-velho-leandro-morais-4-.jpg" alt="Porto Velho">
+</section>
+
+<section id="rios">
+  <h2>🌊 Rios Importantes</h2>
+  <ul>
+    <li>Rio Madeira</li>
+    <li>Rio Guaporé</li>
+    <li>Rio Mamoré</li>
+    <li>Rio Ji-Paraná</li>
+    <li>Rio Jamari</li>
+  </ul>
+</section>
+
+<section id="infra">
+  <h2>🔌 Energia e Água</h2>
+  <p><strong>Energia:</strong> Fornecida pela <a href="energia.html" target="_blank">Energisa Rondônia</a></p>
+  <p><strong>Água e Esgoto:</strong> Serviços prestados pela <a href="caerd.html" target="_blank">CAERD</a></p>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
